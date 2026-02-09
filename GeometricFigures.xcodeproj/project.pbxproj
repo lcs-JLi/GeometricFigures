@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		485E2FD02F3A42C7005969B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485E2FCC2F3A42C7005969B1 /* Assets.xcassets */; };
+		485E2FD22F3A42C7005969B1 /* GeometricFiguresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2FCE2F3A42C7005969B1 /* GeometricFiguresApp.swift */; };
+		485E2FD62F3A4469005969B1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2FD52F3A4469005969B1 /* CircleView.swift */; };
+		485E2FDB2F3A49A0005969B1 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2FDA2F3A499F005969B1 /* Circle.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		485E2FBE2F3A426F005969B1 /* GeometricFigures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometricFigures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		485E2FCC2F3A42C7005969B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485E2FCE2F3A42C7005969B1 /* GeometricFiguresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricFiguresApp.swift; sourceTree = "<group>"; };
+		485E2FD52F3A4469005969B1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		485E2FDA2F3A499F005969B1 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		485E2FC02F3A426F005969B1 /* GeometricFigures */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GeometricFigures;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		485E2FBB2F3A426F005969B1 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		485E2FB52F3A426F005969B1 = {
 			isa = PBXGroup;
 			children = (
-				485E2FC02F3A426F005969B1 /* GeometricFigures */,
+				485E2FCF2F3A42C7005969B1 /* GeometricFigures */,
 				485E2FBF2F3A426F005969B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,33 @@
 				485E2FBE2F3A426F005969B1 /* GeometricFigures.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		485E2FCF2F3A42C7005969B1 /* GeometricFigures */ = {
+			isa = PBXGroup;
+			children = (
+				485E2FCE2F3A42C7005969B1 /* GeometricFiguresApp.swift */,
+				485E2FD72F3A45F1005969B1 /* Model */,
+				485E2FD42F3A4413005969B1 /* View */,
+				485E2FCC2F3A42C7005969B1 /* Assets.xcassets */,
+			);
+			path = GeometricFigures;
+			sourceTree = "<group>";
+		};
+		485E2FD42F3A4413005969B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				485E2FD52F3A4469005969B1 /* CircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		485E2FD72F3A45F1005969B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				485E2FDA2F3A499F005969B1 /* Circle.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				485E2FC02F3A426F005969B1 /* GeometricFigures */,
 			);
 			name = GeometricFigures;
 			packageProductDependencies = (
@@ -109,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485E2FD02F3A42C7005969B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485E2FD62F3A4469005969B1 /* CircleView.swift in Sources */,
+				485E2FD22F3A42C7005969B1 /* GeometricFiguresApp.swift in Sources */,
+				485E2FDB2F3A49A0005969B1 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
