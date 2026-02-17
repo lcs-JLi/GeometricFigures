@@ -12,7 +12,13 @@ struct CircleView: View {
     @State var currentCircle = Circle(radius: 10)
     
     var body: some View {
+        Image("CircleDiagram")
+            .resizable()
+              .scaledToFit()
+       
+              
         VStack {
+            Spacer()
             
             // TODO: Add image later
          
@@ -25,6 +31,14 @@ struct CircleView: View {
                 step: 1.0)
             // Label showing the current slider value
             Text("Radius is \(currentCircle.radius.formatted())")
+            
+            Text("Diameter is \(currentCircle.diameter.formatted())")
+            Text("Area is \(currentCircle.area.formatted())")
+            Text("Circumference is \(currentCircle.circumference.formatted())")
+                .padding()
+            Spacer()
+            
+                
     
         }
     }
